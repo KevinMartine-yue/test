@@ -1,0 +1,275 @@
+/* layer + clear */
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Reset perso */
+
+*,*:after,*:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.clear:before,.clear:after {
+  content:' ';display:table;
+}
+.clear:after {
+  clear: both;
+}
+.clear {
+  *zoom:1;
+}
+
+
+/* PERSO */
+
+body{
+  font: 400 16px/1.3 Verdana,Arial,sans-serif;
+  /* font-weight - font-size - line-height - font-family */
+  background-color: #fff;
+  color:#000;
+}
+.wrap{
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+#header {
+  height: 440px;
+  background: url(../image/people.jpg) no-repeat 80% 140px;
+}
+#header h1 {
+  background-color: #BF3A17;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.8em;
+  height:43px;
+  width:19.8%;
+  text-align: center;
+  margin: 20px 0 5px 2px;
+}
+#header p {
+  float: right;
+  margin-top: -30px;
+  margin-right: 1%;
+  /* margin: -30px 1% 0 0; */
+  font-size: 1.1em;
+  font-style: italic;
+}
+#header p span {
+  color:#7B2816;
+}
+#header nav {
+  height:50px;
+  background-color:#EBEAD8;
+}
+#header nav ul li a {
+  float: left;
+  width:20%;
+  text-align: center;
+  padding: 15px 0;
+  color:#000;
+  text-decoration: none;
+  border-left: 2px #fff solid;
+}
+#header nav ul li:last-child a {
+  border-right: 2px #fff solid;
+}
+#header nav ul li a:hover {
+  background-color: #E9E6D2;
+}
+#header h2 {
+  width:316px;
+  height:197px;
+  color: #985D4A;
+  font-size: 1.5em;
+  line-height: 1;
+  margin: 75px 0 0 5%;
+}
+#header h2 span.titre2 {
+  color:#040404;
+  font-size: 3em;
+  line-height: .9;
+}
+#header h2 span.titre3 {
+  color: #C65031;
+  font-size: 3em;
+  line-height: .7;
+  margin-left: 25%;
+}
+#header h2 span.titre4 {
+  color: #0E0E0F;
+  margin-left: 25%;
+}
+/* section-center */
+#section-center {
+  background-color: #EBEAD8;
+  padding: 35px 0;
+  border-top: 7px solid #E2E1CF;
+  line-height: 1.1;
+}
+#section-center .sectionx {
+  float: left;
+  width: 33.3333333%;
+  padding: 0 10px;
+}
+.sectionx h3, .sectiony h3 {
+  font-size: 1.8em;
+}
+.sectionx h4 {
+  color: #7B2911;
+  margin-bottom: 20px;
+  font-size: 1.2em;
+}
+.sectionx ul li a, .sectiony ul li a {
+  color: #BE3A14;
+  font-size: .75em;
+  background: url(../image/puce.png) no-repeat 0 4px;
+  padding-left: 5%;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  }
+  .sectionx ul li a:hover, .sectiony ul li a:hover {
+    padding-left: 7%;
+    background-position: 3px 4px;
+  }
+  .sectionx ul li , .sectiony ul li {
+    margin-bottom: 3px;
+  }
+  .sectionx p{
+    font-size: .8em;
+    margin-bottom: 10px;
+    }
+    .sectionx p strong{
+      font-weight: bold;
+    }
+    .sectionx p a {
+      color: #BD3B17;
+    }
+    .sectionx p a:hover {
+      opacity: .7;
+    }
+    .sectionx figure {
+      float: left;
+    }
+    .sectionx .user {
+      float: left;
+      margin-left: 20px;
+    }
+    /* FORMULAIRE ROUGE */
+    #section-center form {
+      background-color: #BF3A17;
+      color: #fff;
+      margin-top: 20px;
+      padding: 7px;
+      font-size: 1.6em;
+    }
+    #section-center form a {
+      color: #fff;
+      font-size: .6em;
+    }
+    /* couleur orange: #F8931D */
+    #section-center input[type=text]{
+      width: 80%;
+    }
+    #section-center input[type=submit] {
+      background-color: #F8931D;
+      color: #fff;
+      width: 15%;
+      border:none;
+      font-weight: bold;
+      text-transform: uppurcase;
+      border-radius: 5px;
+    }
+    #section-center input[type=submit]:hover {
+      background-color: #fff;
+      color: #F8931D;
+      cursor: pointer;
+    }
+    #footer {
+      background-color: #DBD5BB;
+      padding: 25px 0;
+      line-height: 1;
+    }
+    #footer .sectiony {
+      float: left;
+      width: 33.3333333%;
+      padding: 0 10px;
+    }
+    #footer .sectiony h3 {
+      margin-bottom: 10px;
+    }
+    #footer .sectiony ul {
+      margin-bottom: 20px;
+    }
+    #footer .sectiony p a {
+      color: #5C584C;
+      font-size: .8em;
+    }
+    #footer .sectiony p a:hover {
+      opacity: .7;
+    }
+    #section_final {
+      padding: 5px 0;
+      text-align: center;
+     font-size: .8em;
+    }
+
+    /* RESPONSIVE */
+
+    @media screen and (max-width: 800px) {
+    #section-center .sectionx,#footer .sectiony {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  @media screen and (max-width: 500px) {
+
+
+  }
