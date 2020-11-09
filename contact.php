@@ -1,1 +1,3 @@
-<php echo 'yo'
+<?php echo 'yo'
+
+echo 'bonjour'
